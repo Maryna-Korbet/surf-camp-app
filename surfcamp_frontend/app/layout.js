@@ -1,3 +1,5 @@
+import '../sass/_main.scss';
+
 export const metadata = {
   title: "SurfCamp",
   description: "Surfing Camp App",

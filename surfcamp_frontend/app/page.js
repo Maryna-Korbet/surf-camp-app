@@ -4,4 +4,4 @@ export default function Home() {
       <h1>SurfCamp</h1>
     </main>
   );
-};
+}
