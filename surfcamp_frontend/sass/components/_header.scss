@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+
+  &__logo {
+    width: 50px;
+    height: 77px;
+    fill: rgba(0, 0, 0, 1);
+    cursor: pointer;
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+
+    & li:not(:last-of-type) {
+      margin-right: 46px;
+    }
+  }
+}

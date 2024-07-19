@@ -18,11 +18,17 @@ const Header = ({ }) => {
 
     return (
         <header className='header'>
-            <img src="../../assets/icons/surfcamp-logo.svg" alt="logo" />
+            <Link href='/'>
+                <svg className='header__logo'>
+                    <use xlinkHref="../../assets/icons/surfcamp-logo.svg"></use>
+                </svg>
+            </Link>
             <ul className='header__nav'>                
                 {navItems.map((item) => (
                     <li key={item.slug}>
-                        <Link href={`/${item.slug}`}>{item.display}</Link>
+                        <Link href={`/${item.slug}`}>
+                            <h5>{item.display}</h5>
+                        </Link>
                     </li>
                 ))}
             </ul>
