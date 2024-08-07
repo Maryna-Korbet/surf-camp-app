@@ -18,11 +18,7 @@ const Header = ({ }) => {
 
     return (
         <header className='header'>
-            <Link href='/'>
-                <svg className='header__logo'>
-                    <use xlinkHref="../../assets/icons/surfcamp-logo.svg"></use>
-                </svg>
-            </Link>
+            <img className="header__logo" src="/assets/logo.svg" alt="" />
             <ul className='header__nav'>                
                 {navItems.map((item) => (
                     <li key={item.slug}>

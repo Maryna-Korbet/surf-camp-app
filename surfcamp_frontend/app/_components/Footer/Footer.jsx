@@ -38,30 +38,30 @@ const Footer = ({ }) => {
     return (
         <footer className='footer'>
             <nav className='footer__nav'>
-                <img className='footer__logo' src="/surfcamp_frontend/app/assets/icons/surfcamp-logo.svg" alt="logo" />
+                <img className='footer__logo' src="/assets/logo.svg" alt="logo" />
                 <ul className='footer__links'>
                     {
-                        navItems.map((item) => {
+                        navItems.map((item) => (
                             <li key={item.slug}>
                                 <Link href={item.slug}>
                                     <h5>{item.display}</h5>
                                 </Link>
                             </li>
-                        })
-                    };
+                        ))
+                    }
                 </ul>
             </nav>
 
             <div className="footer__policies">
-                <ul className="footer__policies_nav">
+                <ul className="footer__policies-nav">
                     {
-                        policies.map((policy) => {
+                        policies.map((policy) => (
                             <li key={policy.slug}>
                                 <p className='copy'>
                                     {policy.display}
                                 </p>
                             </li>
-                        })
+                        ))
                     }
                 </ul>
                 <p className="copy">@ Sam`s Surfcamp - all rights reserved</p>
