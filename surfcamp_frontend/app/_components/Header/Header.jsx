@@ -18,7 +18,7 @@ const Header = ({ }) => {
 
     return (
         <header className='header'>
-            <img className="header__logo" src="/assets/logo.svg" alt="" />
+            <img className="header__logo" src="/assets/logo.svg" alt="a man rides a surfboard" />
             <ul className='header__nav'>                
                 {navItems.map((item) => (
                     <li key={item.slug}>
